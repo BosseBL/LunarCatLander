@@ -1,0 +1,39 @@
+import java.awt.Graphics;
+import javax.swing.JPanel;
+
+/*	en abstrakt klass som representerar en värld. CatWorld ärver från denna överklass. Jag inspererades av
+ * 	spelutveckling när jag gjorden denna klass. Den lägger grunden för tillstånds hantering, uppdatering och 
+ * 	rendering. den är dessutom en JPanel. Det enda som saknas är en överklass för alla världens objekt så att
+ * 	förflyttning av objekt från en värld till en annan blir möjlig.
+ */
+
+public abstract class World extends JPanel{
+	
+	private boolean quit;					// en flagga som visar om det är dags att avsluta eller inte
+	
+	protected StateManager stateManager;	// en tillstånds hanterare
+	
+	protected World() {
+		stateManager = new StateManager();
+		quit = false;
+	}
+	
+	// uppdaterar världens logik
+	protected void update() {
+		// Detta ser till så att initiate() alltid kallas på då tillståndet har ändrats
+		if(stateManager.updateState()) initiate();
+	}
+	
+	// renderar
+	protected void paintComponent(Graphics g) {
+		super.paintComponent(g);
+	}
+	
+	public boolean hasQuit() {return quit;}	
+	
+	protected void quit() {quit = true;}
+	
+	// initierar ett nytt tillstånd
+	protected abstract void initiate();
+}
+

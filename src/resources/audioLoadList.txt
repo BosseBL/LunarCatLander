@@ -1,0 +1,5 @@
+thruster src/resources/audio/thrust.wav
+angryCat src/resources/audio/angryCat.wav
+catMeow src/resources/audio/catMeow.wav
+explosion src/resources/audio/bombExploding.wav
+groundSmack src/resources/audio/jab.wav

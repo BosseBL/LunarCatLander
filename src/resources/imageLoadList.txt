@@ -1,0 +1,6 @@
+background src/resources/images/bg.png
+fallingCat src/resources/images/cat5.png
+thrustingCat src/resources/images/cat6.png
+deadCat src/resources/images/cat8.png
+lander src/resources/images/moonlander2.png
+explosion src/resources/images/explosion.png

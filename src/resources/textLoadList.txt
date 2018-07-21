@@ -1,0 +1,5 @@
+introText src/resources/texts/introText.txt
+outroTextWin src/resources/texts/outroText1.txt
+outroTextFail src/resources/texts/outroText2.txt
+instructions1 src/resources/texts/instructions1.txt
+instructions2 src/resources/texts/instructions2.txt

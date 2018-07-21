@@ -1,0 +1,4 @@
+Now for the ultimate test!
+Press 'SPACE' to launch a lunar lander piloted by cats,
+and we shall see if the lack of atmosphere and low gravity
+have transformed the cats to excellent lunar pilots.
